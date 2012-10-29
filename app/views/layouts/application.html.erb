@@ -13,10 +13,6 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
-
-    <!-- For all other devices -->
-    <!-- Size should be 32 x 32 pixels -->
-    <%= favicon_link_tag 'images/favicon.ico', :rel => 'shortcut icon' %>
   </head>
   <body>
 
@@ -31,8 +27,8 @@
           <a class="brand" href="#">Dnugbooks</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
+              <li><%= link_to "Books", "/books"  %></li>
+              <li><%= link_to "Authors", "/authors"  %></li>
               <li><%= link_to "Link3", "/path3"  %></li>
             </ul>
           </div><!--/.nav-collapse -->

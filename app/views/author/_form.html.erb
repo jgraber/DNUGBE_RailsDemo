@@ -1,0 +1,26 @@
+<%= form_for @author, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :lastname, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :lastname, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :firstname, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :firstname, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :twitter, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :twitter, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                author_path, :class => 'btn' %>
+  </div>
+<% end %>
