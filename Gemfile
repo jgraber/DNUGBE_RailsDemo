@@ -39,6 +39,9 @@ gem 'pg', :group => :production
 # For image upload
 gem "paperclip", "~> 3.0"
 
+# For ActiveAdmin
+gem 'activeadmin'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

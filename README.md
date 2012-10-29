@@ -123,3 +123,28 @@
 `/add cover column to book index`
 
 `git add . && git commit -a -m "add image upload"`
+
+
+## Add ActiveAdmin
+
+`/add activeadmin to Gemfile`
+
+`bundle`
+
+`rails generate active_admin:install`
+
+`/change password in db/migrate/**_devise_create_admin_users.rb`
+
+`rake db:migrate`
+
+`rails generate active_admin:resource book`
+
+`rails generate active_admin:resource author`
+
+`/add link to app/views/layouts/application.html.erb`
+
+`/add config/initializers/kaminari.rb to fix paging bug`
+
+`/add custom part to dashboard.rb`
+
+`git add . && git commit -a -m "add ActiveAdmin"`
