@@ -36,6 +36,9 @@ gem 'bootstrap-will_paginate'
 gem 'sqlite3', :group => :development
 gem 'pg', :group => :production
 
+# For image upload
+gem "paperclip", "~> 3.0"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

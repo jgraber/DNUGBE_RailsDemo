@@ -5,6 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
+      <th></th>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:isbn) %></th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
+        <td><%= show_cover(book, :thumb) %></td>
         <td><%= link_to book.id, book_path(book) %></td>
         <td><%= book.title %></td>
         <td><%= book.isbn %></td>

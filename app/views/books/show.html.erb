@@ -4,6 +4,7 @@
 </div>
 
 <dl class="dl-horizontal">
+  <dd><%= show_cover(@book, :medium) %></dd>
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @book.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:isbn) %>:</strong></dt>

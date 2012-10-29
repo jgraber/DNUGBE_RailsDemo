@@ -72,3 +72,54 @@
 `/add before_filter to ApplicationController`
 
 `git add . && git commit -a -m "add MiniProfiler"`
+
+
+## Add Paging
+`/add gems will_paginate & bootstrap-will_paginate to Gemfile`
+
+`bundle`
+
+`/add paging to author & book (2 different ways)`
+
+`/add pager to index views`
+
+`git add . && git commit -a -m "add Paging"`
+
+
+## Deploy to Heroku
+`/add pg to Gemfile and use sqlite only in dev`
+
+`bundle`
+
+`git add . && git commit -a -m "prepare deployment to Heroku"`
+
+`/usr/local/heroku/bin/heroku create`
+
+`heroku addons:add heroku-postgresql`
+
+`git push heroku master`
+
+`heroku run rake --trace db:migrate`
+
+`heroku logs`
+
+
+## Add image upload
+
+`/add paperclip to Gemfile`
+
+`bundle`
+
+`rails generate paperclip book cover`
+
+`rake db:migrate`
+
+`/add cover to book`
+
+`/add show_cover to BookHelper`
+
+`/add image selector to book form`
+
+`/add cover column to book index`
+
+`git add . && git commit -a -m "add image upload"`
