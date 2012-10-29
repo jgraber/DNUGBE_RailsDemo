@@ -18,9 +18,17 @@
     </div>
   </div>
 
+  <div class="control-group">
+    <%= f.fields_for :authors do |builder| %>
+      <%= render "authors_fields", :f => builder %>
+    <% end %>
+
+    <br/><%= link_to_add_fields "Add Authors", f, :authors%>
+  </div>
+
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                book_path, :class => 'btn' %>
+                books_path, :class => 'btn' %>
   </div>
 <% end %>
