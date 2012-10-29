@@ -50,3 +50,25 @@
 `/add paths to routes.rb and application.html.erb`
 
 `git add . && git commit -a -m "add book and author"`
+
+
+## Add n:m Relations
+`/add authorship to book and author`
+
+`/add _authors_fields to book`
+
+`/add link-helpers to application_helper`
+
+`/add js helpers to application.js`
+
+`git add . && git commit -a -m "add n:m relationship"`
+
+
+## Add MiniProfiler
+`/add gem 'rack-mini-profiler' to Gemfile`
+
+`bundle`
+
+`/add before_filter to ApplicationController`
+
+`git add . && git commit -a -m "add MiniProfiler"`
