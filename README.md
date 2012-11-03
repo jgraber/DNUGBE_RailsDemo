@@ -43,9 +43,9 @@
 
 `rake db:create && rake db:migrate`
 
-`rails g bootstrap:themed book`
+`rails g bootstrap:themed books`
 
-`rails g bootstrap:themed author`
+`rails g bootstrap:themed authors`
 
 `/add paths to routes.rb and application.html.erb`
 
